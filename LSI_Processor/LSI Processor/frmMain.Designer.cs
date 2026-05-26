@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
 			this.btnChkForNew = new System.Windows.Forms.Button();
 			this.tbSource = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -212,7 +213,6 @@
 			this.pbSample.Size = new System.Drawing.Size(100, 100);
 			this.pbSample.TabIndex = 0;
 			this.pbSample.TabStop = false;
-			this.pbSample.Click += new System.EventHandler(this.pbSample_Click);
 			// 
 			// btnPopulateImages
 			// 
@@ -245,6 +245,7 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.tbSource);
 			this.Controls.Add(this.btnChkForNew);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.Name = "frmMain";
 			this.Text = "LSI Processor";
